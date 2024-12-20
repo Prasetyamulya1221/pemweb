@@ -1,0 +1,40 @@
+header .nav-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 5px;
+    margin: -10px;
+}
+.img-item{
+    width: 50px;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    
+    li {
+        margin-right: 5px;
+    } 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+.nav-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: orangered;
+    align-items: center;
+    margin: -10px;
+    font-weight: bold;
+}
+.sosmed a {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+#banner {
+    margin: -10px;
+}

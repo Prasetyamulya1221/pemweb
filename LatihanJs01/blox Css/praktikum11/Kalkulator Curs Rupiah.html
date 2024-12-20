@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Kurs Rupiah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .converter {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .result {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Konversi Kurs Rupiah</h1>
+    <div class="converter">
+        <label for="amount">Masukkan Nilai</label>
+        <input type="text" id="amount"/>
+
+        <label for="currency">Pilih Mata Uang:</label>
+        <select id="currency">
+            <option value="9.915">Dollar US</option>
+            <option value="13.472">Dollar Singapore</option>
+            <option value="874">Ringgit Malaysia</option>
+            <option value="120">Yen Jepang</option>
+            <option value="15.888">Euro</option>
+            <option value="3.592">Riyal Arab Saudi</option>
+        </select>
+
+        <button onclick="convertCurrency()">Konversi</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function convertCurrency() {
+            
+            const amount = document.getElementById('amount').value;
+            const currencyRate = document.getElementById('currency').value;
+
+            
+            if (amount === '' || amount <= 0) {
+                document.getElementById('result').textContent = 'Masukkan jumlah yang valid!';
+                return;
+            }
+
+            
+            const result = amount * currencyRate;
+
+            document.getElementById('result').textContent = `Hasil: ${result.toLocaleString('id-ID')} Rupiah`;
+        }
+    </script>
+</body>
+</html>

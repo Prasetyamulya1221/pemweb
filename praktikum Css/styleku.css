@@ -1,0 +1,92 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(235, 235, 179);
+}
+#header {
+    background-color: #deb887;
+    text-align: center;
+    padding-bottom: 15px;
+    justify-items: center;
+    border-left: 2px dotted black;
+    border-top: 2px dotted black;
+    border-right: 2px dotted black;
+    h1 {
+        color: blue;
+    }
+}
+    blockquote {
+        width: 90%;
+        border-left: 2px dotted black;
+        border-top: 2px dotted black;
+        border-right: 2px dotted black;
+        background-color: yellow;
+        margin: 3 10px;
+    }   span {
+        width: 90%; 
+        margin: 0 10px;
+     }
+.rawr {
+    text-align: center;
+    ul {
+        display: flex;
+        justify-content: center;  
+    }
+    li {
+        list-style-type:none  
+    }
+}
+
+.gambar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: black;
+    img {
+        border: 3px solid navy;
+        border-radius: 100px;
+        width: 300px;
+        height: 300px;
+        margin: 10 px;
+        }
+    }
+.isi {
+    line-height: 20px;
+}
+.huruf-pertama {
+    color: blue;
+    font-size: 50px;
+}
+.koleksi {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: black;
+    img {
+        border: 2px solid navy;
+        border-radius: 100px;
+        width: 300px;
+        height: 300px;
+        margin: 3px;
+    }
+}
+.promo {
+    text-align: center;
+    h2 {
+        color: royalblue;
+        align-content: center;
+    }
+    h3 {
+        color: yellowgreen;
+        
+    }
+    h4 {
+        color: blueviolet;
+    } 
+    ol {
+        text-align: center;
+        li {
+            color: cadetblue;
+            
+        }
+    } 
+}
